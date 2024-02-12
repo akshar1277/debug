@@ -50,4 +50,4 @@ def predict(X, y, features):
     # Predict the value
     prediction = model.predict(np.array(features).reshape(1, -1))
 
-    return prediction, score
+   

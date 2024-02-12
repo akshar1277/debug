@@ -55,7 +55,7 @@ def app(df, X, y):
         st.pyplot()
 
     if st.checkbox("Show Sample Results"):
-        safe = (df['sl'] == 0)
+        safe = (df['sl'] == 0).sum()
         low = (df['sl'] == 1).sum()
         med = (df['sl'] == 2).sum()
         high = (df['sl'] == 3).sum()
